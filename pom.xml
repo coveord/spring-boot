@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-build</artifactId>
-	<version>1.4.10.BUILD-COVEO</version>
+	<version>1.4.8.RELEASE-COVEO</version>
 	<packaging>pom</packaging>
 	<name>Spring Boot Build</name>
 	<description>Spring Boot Build</description>
@@ -392,7 +392,7 @@
 			</snapshots>
 			<id>central</id>
 			<name>plugins-release</name>
-			<url>https://maven.cloud.coveo.com/artifactory/plugins-release</url>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-release-local</url>
 		</pluginRepository>
 		<pluginRepository>
 			<releases>
@@ -400,20 +400,19 @@
 			</releases>
 			<id>snapshots</id>
 			<name>plugins-snapshot</name>
-			<url>https://maven.cloud.coveo.com/artifactory/plugins-snapshot</url>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-snapshot-local</url>
 		</pluginRepository>
 	</pluginRepositories>
-
 	<distributionManagement>
 		<repository>
 			<id>CoveoCloud</id>
 			<name>CoveoCloud-releases</name>
-			<url>https://maven.cloud.coveo.com/artifactory/libs-release-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-release-local</url>
 		</repository>
 		<snapshotRepository>
 			<id>CoveoCloud</id>
 			<name>CoveoCloud-snapshots</name>
-			<url>https://maven.cloud.coveo.com/artifactory/libs-snapshot-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-snapshot-local</url>
 		</snapshotRepository>
 		<site>
 			<id>${project.artifactId}</id>

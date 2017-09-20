@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starters</artifactId>
-		<version>1.4.10.BUILD-COVEO</version>
+		<version>1.4.8.RELEASE-COVEO</version>
 	</parent>
 	<artifactId>spring-boot-starter-aop</artifactId>
 	<name>Spring Boot AOP Starter</name>
