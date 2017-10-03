@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starters</artifactId>
-		<version>1.4.8.RELEASE-COVEO</version>
+		<version>1.4.9.RELEASE-COVEO-SNAPSHOT</version>
 	</parent>
 	<artifactId>spring-boot-starter-jta-bitronix</artifactId>
 	<name>Spring Boot Bitronix JTA Starter</name>
