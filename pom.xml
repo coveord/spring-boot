@@ -392,7 +392,7 @@
 			</snapshots>
 			<id>central</id>
 			<name>plugins-release</name>
-			<url>https://maven.cloud.coveo.com/artifactory/plugins-release-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-release</url>
 		</pluginRepository>
 		<pluginRepository>
 			<releases>
@@ -400,19 +400,19 @@
 			</releases>
 			<id>snapshots</id>
 			<name>plugins-snapshot</name>
-			<url>https://maven.cloud.coveo.com/artifactory/plugins-snapshot-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-snapshot</url>
 		</pluginRepository>
 	</pluginRepositories>
 	<distributionManagement>
 		<repository>
 			<id>CoveoCloud</id>
 			<name>CoveoCloud-releases</name>
-			<url>https://maven.cloud.coveo.com/artifactory/ext-release-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-release</url>
 		</repository>
 		<snapshotRepository>
 			<id>CoveoCloud</id>
 			<name>CoveoCloud-snapshots</name>
-			<url>https://maven.cloud.coveo.com/artifactory/ext-snapshot-local</url>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-snapshot</url>
 		</snapshotRepository>
 		<site>
 			<id>${project.artifactId}</id>

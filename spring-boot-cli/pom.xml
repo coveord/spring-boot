@@ -271,6 +271,7 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
+						    <tarLongFileMode>posix</tarLongFileMode>
 							<descriptors>
 								<descriptor>src/main/assembly/bin-package.xml</descriptor>
 							</descriptors>
@@ -392,4 +393,57 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>libs-release</name>
+			<url>https://maven.cloud.coveo.com/artifactory/libs-release</url>
+		</repository>
+		<repository>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<id>snapshots</id>
+			<name>libs-snapshot</name>
+			<url>https://maven.cloud.coveo.com/artifactory/libs-snapshot</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>plugins-release</name>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<id>snapshots</id>
+			<name>plugins-snapshot</name>
+			<url>https://maven.cloud.coveo.com/artifactory/plugins-snapshot</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+		<repository>
+			<id>CoveoCloud</id>
+			<name>CoveoCloud-releases</name>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>CoveoCloud</id>
+			<name>CoveoCloud-snapshots</name>
+			<url>https://maven.cloud.coveo.com/artifactory/ext-snapshot-local</url>
+		</snapshotRepository>
+		<site>
+			<id>${project.artifactId}</id>
+			<name>${project.artifactId}</name>
+			<url>${project.artifactId}/</url>
+		</site>
+	</distributionManagement>
 </project>
